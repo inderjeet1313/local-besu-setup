@@ -1,0 +1,12 @@
+besu --data-path=../node3/data \
+     --revert-reason-enabled \
+     --p2p-port=30303 \
+     --genesis-file=../genesis.json \
+     --rpc-http-enabled \
+     --rpc-http-api=ETH,NET,QBFT \
+     --host-allowlist="*" \
+     --rpc-http-cors-origins="all" \
+     --rpc-http-port=8083 \
+     --rpc-ws-enabled \
+     --rpc-ws-port=7073 \
+     --min-gas-price=0

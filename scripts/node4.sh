@@ -1,0 +1,12 @@
+besu --data-path=../node4/data \
+     --revert-reason-enabled \
+     --p2p-port=30304 \
+     --genesis-file=../genesis.json \
+     --rpc-http-enabled \
+     --rpc-http-api=ETH,NET,QBFT \
+     --host-allowlist="*" \
+     --rpc-http-cors-origins="all" \
+     --rpc-http-port=8084 \
+     --rpc-ws-enabled \
+     --rpc-ws-port=7074 \
+     --min-gas-price=0
